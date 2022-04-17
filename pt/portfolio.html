@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Portfólio - Lucas Emmanuel Santos</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div id="cabecalho">
+		
+		<div id="banner">
+			<h1>Lucas Emmanuel Santos</h1>
+		</div>
+
+		<div id="menu">
+			<!--<span class="fakemenu">HOME</span>
+			<span class="fakemenu">PORTFOLIO</span>
+			<span class="fakemenu">CURRÍCULO</span>
+			<span class="fakemenu">BIOGRAFIA</span>
+			<span class="fakemenu">CONTATO</span> -->
+			<!--<a href="index.html">HOME</a> -->
+			<a href="portfolio.html">PORTFÓLIO</a>
+			<a href="cv.html">CURRÍCULO</a>
+			<a href="bio.html">BIOGRAFIA</a>
+			<a href="contact.html">CONTATO</a>
+		</div>
+
+	</div>
+
+	<div id="principal">
+		<div id="texto">
+			<p class="titlecard">Jogos Desenvolvidos</p>
+			<div class="portfolio">
+			<a href="portfolio/malpractice.html">
+				<img src="../images/malpractice.png">
+				<p class="projname"><u>Malpractice</u> (2022)</p><p class="subtitle">Design, Produção, Efeitos Visuais</p>
+			</a>
+			</div>
+			<div class="portfolio">
+			<a href="portfolio/emptyspace.html">
+				<img src="../images/emptyspace.png">
+				<p class="projname"><u>Empty Space</u> (2021)</p><p class="subtitle">Design, Roteiro, Produção, Efeitos Visuais</p>
+			</a>
+			</div>
+			<div class="portfolio">
+			<a href="portfolio/irundy.html">
+				<img src="../images/irundy.png">
+				<p class="projname"><u>Irundy - Guardiões da Floresta</u> (2020)</p><p class="subtitle">Design, Produção</p>
+			</a>
+			</div>
+			<div class="portfolio">
+			<a href="portfolio/jad.html">
+				<img src="../images/jad.png">
+				<p class="projname"><u>Just Another Day</u> (2020)</p><p class="subtitle">Design, Produção, Animação</p>
+			</a>
+			</div>
+			<div class="portfolio">
+			<a href="portfolio/blite.html">
+				<img src="../images/blite.png">
+				<p class="projname"><u>Blite</u> (2014)</p><p class="subtitle">Design, Roteiro, Programação, Produção</p>
+			</a>
+			</div>
+			<div class="portfolio">
+			<a href="portfolio/tcc.html">
+				<img src="../images/tcc.png">
+				<p class="projname"><u>L'Invention</u> / <u>Devaneio</u> (2013)</u></p><p class="subtitle">Design, Roteiro, Programação, Produção</p>
+			</a>
+			</div>
+			<br>
+			<p class="titlecard">Jogos Inacabados</p>
+			<div class="portfolio">
+			<a href="portfolio/cluedle.html">
+				<img src="../images/cluedle.png">
+				<p class="projname"><u>Cluedle</u> (2022)</u></p><p class="subtitle">Design, Produção, Arte 2D</p>
+			</a>
+			</div>
+			<div class="portfolio">
+			<a href="portfolio/jadremix.html">
+				<img src="../images/jadremix.png">
+				<p class="projname"><u>Just Another Day 2.0</u> (2021)</u></p><p class="subtitle">Design, Roteiro, Produção</p>
+			</a>
+			</div>
+			<div class="portfolio">
+			<a href="portfolio/mycoon.html">
+				<img src="../images/mycoon.png">
+				<p class="projname"><u>Miçanga Tycoon</u> (2016)</u></p><p class="subtitle">Design, Roteiro, Produção, Arte 2D</p>
+			</a>
+			</div>
+			<p class="titlecard">Outros Projetos</p>
+			<div class="portfolio">
+			<a href="portfolio/cincoestralas.html">
+				<img src="../images/cincoestralas.png">
+				<p class="projname"><u>Cinco Estralas</u> (2022)</u></p><p class="subtitle">Webdesign, Editoria</p>
+			</a>
+			</div>
+			<div class="portfolio">
+			<a href="portfolio/abacat.html">
+				<img src="../images/abacat.png">
+				<p class="projname"><u>Abacat (Avogato)</u> (2020)</u></p><p class="subtitle">Roteiro</p>
+			</a>
+			</div>
+			<div class="portfolio">
+			<a href="portfolio/intotheend.html">
+				<img src="../images/intotheend.png">
+				<p class="projname"><u>Into the End</u> (2016)</u></p><p class="subtitle">Mixagem, Edição de Som</p>
+			</a>
+			</div>
+		</div>
+
+
+		<div id="rodape">
+			Área do rodapé. Não sei o que colocar ainda...
+		</div>
+	</div>
+
+<form>
+    <label for="lang-switch">
+        <span lang="pt">언어</span>
+        <span lang="en">Language</span>
+    </label>
+    <select id="lang-switch">
+        <option value="en">English</option>
+        <option value="pt">한국어</option>
+    </select>
+</form>
+
+<p>
+    <span lang="ko">한국어 텍스트</span>
+    <span lang="en">Text in English</span>
+</p>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+$('[lang]').hide(); // hide all lang attributes on start.
+$('[lang="en"]').show(); // show just Korean text (you can change it)
+$('#lang-switch').change(function () { // put onchange event when user select option from select
+    var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+    switch (lang) {
+        case 'en':
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        break;
+        case 'ko':
+            $('[lang]').hide();
+            $('[lang="ko"]').show();
+        break;
+        default:
+            $('[lang]').hide();
+            $('[lang="ko"]').show();
+        }
+});
+</script>
+</html>
