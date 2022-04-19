@@ -34,7 +34,7 @@ h3 {
 }
 
 #menu {
-	padding: 10px 10px 10px 130px;
+	padding: 10px 10px 10px 195px;
 	position: relative;
 	height: inherit;
 	top: 60px;
@@ -278,4 +278,11 @@ h3 {
 .backbutton a, .backbutton a:link, .backbutton a:active, .backbutton a:visited{
 	color: rebeccapurple;
 	font-size: 1.1em;
+}
+
+#pdf {
+
+	width: 800px;
+	height: 1138px;
+	margin: 0px 50px;
 }
