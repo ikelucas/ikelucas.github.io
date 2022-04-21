@@ -30,52 +30,29 @@
 
 	<div id="principal">
 		<div id="texto">
-			<p>Texto em construção.</p>
+		<div id="idioma">
+			<a href=""><img src="../images/en.png" alt="English"></a>
+			<img class="selected" src="../images/pt.png" alt="Português">
+		</div>
+			<h2>Home</h2>
+			<div id="textois">
+				<p>Olá! Meu nome é <b>Lucas Emmanuel Santos</b>, também conhecido como <b>Ike</b>, e este aqui é o meu site! Aqui você pode encontrar informações profissionais como o meu Portfólio e o meu Currículo, assim como diferentes formas de entrar em contato comigo. Abaixo, você pode encontrar um resumo pessoal e profissional, o que eu tenho feito nos últimos anos, e também quais os meus planos para o futuro. Agradeço pela atenção!</p>
+			</div>
+			<p class="titlecard">Desenvolvimento de Jogos</p>
+				<p class="textintro">Desenvolvo jogos desde 2013, buscando criar obras com personalidade e que consigam dialogar com o público de alguma forma positiva. Tenho conhecimento em diversas engines, programação, som, edição, modelagem, animação, teste e efeitos visuais, mas costumo me colocar primeiramente como <b>designer</b> e <b>escritor</b>. Acredito que os jogos são capazes de mudar as nossas vidas, e vêm se tornando a ferramenta com maior potencial para crescimento pessoal e comunitário. Também possuo experiência com engenharia reversa de jogos e engines já existentes, desenvolvendo modificações para jogos dos consoles <i>Nintendo 64</i>, <i>GameBoy Advance</i>, <i>PlayStation 2</i> e <i>Nintendo Wii</i>. Mais recentemente, pude estudar e fazer alterações na engine <i>Frostbite</i>, da empresa DICE. </p>
+				<p class="titlecard">Ensino e Pedagogia</p>
+				<p class="textintro"> Formado em Psicopedagogia, e com experiência em projetos sociais que misturam jogos e educação, eu acredito que a interatividade é um elemento essencial para reinventar o ensino e apresentar o conteúdo de uma maneira mais agradável e intuitiva para os alunos, seja este sobre Design de Jogos ou não. Realizei um projeto chamado <b>Videogame na Escola</b>, que buscava utilizar referências em jogos existentes e desenvolver jogos novos para auxiliar os alunos em suas matérias escolares diárias. Para o futuro, pretendo desenvolver dois projetos; o primeiro, chamado <b>Meu Primeiro Jogo</b>, será um curso rápido e gratuito para jovens e adultos aprenderem a aplicar conceitos básicos de Design de Jogos utilizando a versão gratuita da ferramenta <i>RPG Maker</i>. O segundo projeto, focado em <b>Game Design</b>, busca estimular o aluno a entender o processo de desenvolvimento de um jogo, bem como suas limitações e as diferentes dificuldades encontradas em um desenvolvimento solitário e em equipe, culminando em pequenas <i>Game Jams</i> para aplicar o conhecimento adquirido.</p>
+				<p class="titlecard">Redação e Tradução</p>
+				<p class="titlecard">Edição de Imagem, Vídeo e Áudio</p>
 		</div>
 
 
 		<div id="rodape">
-			Área do rodapé. Não sei o que colocar ainda...
+			Website criado por Lucas Emmanuel. Todos os direitos reservados © 2022
 		</div>
 	</div>
 
-<form>
-    <label for="lang-switch">
-        <span lang="pt">언어</span>
-        <span lang="en">Language</span>
-    </label>
-    <select id="lang-switch">
-        <option value="en">English</option>
-        <option value="pt">한국어</option>
-    </select>
-</form>
-
-<p>
-    <span lang="ko">한국어 텍스트</span>
-    <span lang="en">Text in English</span>
-</p>
 
 </body>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script>
-$('[lang]').hide(); // hide all lang attributes on start.
-$('[lang="en"]').show(); // show just Korean text (you can change it)
-$('#lang-switch').change(function () { // put onchange event when user select option from select
-    var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
-    switch (lang) {
-        case 'en':
-            $('[lang]').hide();
-            $('[lang="en"]').show();
-        break;
-        case 'ko':
-            $('[lang]').hide();
-            $('[lang="ko"]').show();
-        break;
-        default:
-            $('[lang]').hide();
-            $('[lang="ko"]').show();
-        }
-});
-</script>
 </html>

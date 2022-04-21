@@ -7,6 +7,7 @@ body {
 	font-size: 1em;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background-color: beige;
+	margin: 0px 0px 0px 0px;
 }
 
 h2 {
@@ -23,9 +24,11 @@ h3 {
 
 #cabecalho {
 	background-color: rebeccapurple;
-	padding: 70px;
+	padding: 70px 0px;
 	text-align: center;
 	position: relative;
+	width: 918px;
+	margin: 0px auto;
 
 }
 
@@ -43,8 +46,9 @@ h3 {
 
 #principal {
 	width: 918px;
+	/*width: 50%;*/
 	margin: 0 auto;
-	position: static;
+	/*position: static;*/
 }
 
 #texto {
@@ -56,8 +60,9 @@ h3 {
 #rodape {
 	background: gray;
 	text-align: center;
-	padding: 15px;
-	margin: 0px 0px 40px 0px;
+	padding: 5px;
+	margin: 0px 0px 0px 0px;
+	font-size: 12px;
 }
 
 .fakemenu {
@@ -73,7 +78,7 @@ h3 {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1.8em;
-	margin: 0px 15px;
+	margin: 0px 5px;
 
 }
 
@@ -149,11 +154,22 @@ h3 {
 
 #devlog {
 	font-size: 16px;
-	margin: 30px 30px;
+	margin: 30px 40px 30px 30px;
+	text-align: justify;
 }
+
 #textao {
 	font-size: 16px;
 	margin: 0px 30px;
+	text-align: justify;
+	text-indent: 15px;
+	line-height: 2;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#textois {
+	font-size: 16px;
+	margin: 30px 30px;
 	text-align: justify;
 	text-indent: 15px;
 	line-height: 2;
@@ -284,5 +300,72 @@ h3 {
 
 	width: 800px;
 	height: 1138px;
-	margin: 0px 50px;
+	margin: 0px 50px 20px 50px;
+	display: inline-block;
+	border: 0px solid;
+}
+
+#cliqueaqui {
+	color: rebeccapurple;
+	margin: 30px 30px;
+	width: 340px;
+	text-decoration: underline;
+}
+
+#cliqueaqui:hover{
+	cursor: pointer;
+}
+
+button {
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: rebeccapurple;
+	color: ghostwhite;
+	margin: 0px 0px 0px 30px;
+	padding: 5px 10px;
+	cursor: pointer;
+	border: 0px solid;
+}
+
+details > summary{
+	font-size: 14px;
+	margin: 15px 30px 10px 30px;
+	padding: 5px 10px;
+	width: 191px;
+	background-color: rebeccapurple;
+	color: ghostwhite;
+	/*border: 2px solid;
+	border-color: grey black black grey;*/
+	cursor: pointer;
+}
+
+#idioma {
+	display: inline-block;
+	float: right;
+	margin: -20px 10px;
+
+}
+
+#idioma img{
+	width: 20px;
+	height: 13px;
+	margin: 0px 0px;
+}
+
+.selected {
+	border: 2px solid rebeccapurple;
+}
+
+#idioma a{
+	cursor: pointer;
+}
+
+.textintro {
+
+	margin: 0px 20px 40px 20px;
+	/*width: 45%;*/
+	text-align: justify;
+	display: inline-block;
+	line-height: 30px;
+	text-indent: 15px;
 }
