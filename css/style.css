@@ -6,7 +6,10 @@
 
 @font-face{
 	font-family: MenuQuadrado;
-	src: url(../files/bpdots.OTF);
+	src: url('bpdots.woff2') format('woff2'),
+         url('bpdots.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -47,8 +50,8 @@ h3 {
 
 #menu {
 	font-family: MenuQuadrado, "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 15px;
-	padding: 66px 10px 10px 195px;
+	font-size: 0.95em;
+	padding: 66px 10px 6px 195px;
 	position: relative;
 	height: inherit;
 	top: 60px;
@@ -336,8 +339,10 @@ h3 {
 
 #pdf {
 
-	width: 800px;
-	height: 1138px;
+	/*width: 800px;
+	height: 1138px;*/
+	width: 49.1em;
+	height: 69.8em;
 	margin: 0px 50px 20px 50px;
 	display: inline-block;
 	border: 0px solid;
