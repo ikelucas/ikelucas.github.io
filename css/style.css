@@ -371,9 +371,9 @@ button {
 
 details > summary{
 	font-size: 14px;
-	margin: 15px 30px 10px 30px;
+	margin: 15px 30px 15px 30px;
 	padding: 5px 10px;
-	width: 191px;
+	width: max-content;
 	background-color: rebeccapurple;
 	color: ghostwhite;
 	/*border: 2px solid;
